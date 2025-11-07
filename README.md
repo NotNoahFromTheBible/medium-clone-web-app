@@ -16,10 +16,10 @@ A fully functional **Medium-inspired blogging application** built with **React (
 
 ## 📸 Screenshots
 
-![](./screenshots/home.png)
+![](./screenshots/write.png)
 ![](./screenshots/unauth.png)
 ![](./screenshots/login.png)
-![](./screenshots/post.png)
+![](./screenshots/posts.png)
 
 ---
 
