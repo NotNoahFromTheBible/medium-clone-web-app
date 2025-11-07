@@ -1,67 +1,131 @@
-# Medium clone - complete full stack application
+# 📰 Medium Clone — Full-Stack Blogging Platform  
 
-This clone is made with React, Node, Express, Typescript and MongoDB.
+A fully functional **Medium-inspired blogging application** built with **React (Vite)**, **Node.js**, **Express**, **TypeScript**, and **MongoDB**.  
+It includes complete authentication, post creation, and commenting functionalities — all within a clean and responsive UI.
 
-<img src="./screenshots/screely-home.png">
+---
 
-## Prerequisites
+## 🚀 Tech Stack
 
-Make sure you have installed all of the following prerequisites on your development machine:
+- **Frontend:** React (Vite) + TypeScript  
+- **Backend:** Node.js + Express + MongoDB  
+- **Authentication:** JWT-based Auth  
+- **Styling:** Tailwind / CSS Modules  
+- **Dev Tools:** Docker (optional), Mongoose, Axios, React Query  
 
-- Git - [Download & Install Git](https://git-scm.com/downloads). OSX and Linux machines typically have this already installed.
-- Node.js - [Download & Install Node.js](https://nodejs.org/en/download/) and the npm package manager. If you encounter any problems, you can also use this [GitHub Gist](https://gist.github.com/isaacs/579814) to install Node.js.
+---
 
-## Cloning The GitHub Repository
+## 📸 Screenshots
 
-The recommended way to get Medium-clone clone is to use git to directly clone the repository:
+| Home | Unauthenticated | Login | Post |
+|------|------------------|-------|------|
+| ![](./screenshots/home.png) | ![](./screenshots/unauth.png) | ![](./screenshots/login.png) | ![](./screenshots/post.png) |
+
+---
+
+## ⚙️ Prerequisites
+
+Before starting, ensure you have the following installed:
+
+- [**Git**](https://git-scm.com/downloads) – Version control system (usually preinstalled on macOS/Linux)  
+- [**Node.js**](https://nodejs.org/en/download/) – Includes npm (Node package manager)
+
+> 💡 **Verify installation:**
+> ```bash
+> git --version
+> node -v
+> npm -v
+> ```
+
+---
+
+## 📦 Installation
+
+### 1️⃣ Clone the repository
 
 ```bash
-$ git clone https://github.com/nisabmohd/Medium-clone.git
-```
+git clone https://github.com/nisabmohd/Medium-clone.git
+cd Medium-clone
 
-## Environment variables React setup
+🧩 Environment Variables
+🔹 Client (client/.env)
 
-create .env file in client/
+Create a .env file inside the client/ directory and add:
 
-```
 VITE_API_URL=http://localhost:8000
-```
 
-## Environment variables Node setup
+🔹 Server (server/.env)
 
-create .env file in server/
+Create a .env file inside the server/ directory and add:
 
-```
 PORT=8000
 MONGO_URI=mongodb://0.0.0.0:27017/medium
-JWT_SECRET= {JWT_SECRET}
-JWT_REFRESH_SECRET= {JWT_REFRESH_SECRET}
+JWT_SECRET=your_jwt_secret_here
+JWT_REFRESH_SECRET=your_jwt_refresh_secret_here
 DEV=true
-```
 
-## Running Your Application
+🧠 Running the Application
+🖥️ Start the Backend (Server)
+cd server
+npm install
+npm run dev
 
-open terminal/bash in this repo and enter below commands to start the application
 
-&#8594; To start the server
+Your server will start at 👉 http://localhost:8000
 
-```bash
-$ cd server
-$ npm run dev
-```
+💻 Start the Frontend (Client)
+cd client
+npm install
+npm run dev
 
-&#8594; To start the client app
 
-```bash
-$ cd client
-$ npm run dev
-```
+Your client will run at 👉 http://localhost:5173
 
-- Your client application should run on port 5137 with the _development_ environment configuration, so in your browser just go to [http://localhost:5173](http://localhost:5173)
+🧭 Features
 
-- Your server application should run on port 8000, so in your browser just go to [http://localhost:8000](http://localhost:8000)
+✅ JWT-based User Authentication
+🧑‍💻 Create / Edit / Delete Posts
+💬 Comment System
+🖼️ Image Upload & Preview
+🔒 Secure API Routes
+⚡ Optimistic UI Updates
+🧱 Modular Codebase (Client & Server Separation)
 
-### Overview
+📚 Folder Structure (Simplified)
+Medium-clone/
+│
+├── client/           # Frontend (React + Vite)
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── contexts/
+│   │   ├── hooks/
+│   │   └── ...
+│   └── package.json
+│
+├── server/           # Backend (Node + Express)
+│   ├── routes/
+│   ├── controllers/
+│   ├── models/
+│   └── package.json
+│
+└── README.md
 
-<img src="./screenshots/screely-home-dark.png">
-<img src="./screenshots/screely-post-dark.png">
+🧩 Development Notes
+
+Run npm audit to check and fix vulnerabilities after installation.
+
+Ensure MongoDB is running locally, or replace the URI with your MongoDB Atlas connection string.
+
+JWT secrets must be strong and kept private (never commit .env files).
+
+🏁 Future Improvements
+
+🌍 Deployment (Render / Vercel / Railway)
+🧠 Rich Text Editor for post creation
+📈 Analytics Dashboard for users
+🧩 Microservices / Docker orchestration (optional extension)
+
+🧑‍💻 Author
+
+Developed with ❤️ by Aayansh
