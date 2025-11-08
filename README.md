@@ -44,7 +44,7 @@ Before starting, ensure you have the following installed:
 ### 1 Clone the repository
 
 > ```bash
-> git clone https://github.com/nisabmohd/Medium-clone.git
+> git clone https://github.com/<your-repo-name>/Medium-clone.git
 > cd Medium-clone
 >```
 
